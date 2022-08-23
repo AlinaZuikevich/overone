@@ -1,8 +1,8 @@
 # #№Hometask_13_1
 # # Из полученного списка чисел создайте список с суммами
 # # этих чисел, отсортированными по возрастанию
-# list_sort = []
 # def nums_sum_list(number):
+#     list_sort = []
 #     for i in number:
 #         list_sort.append(sum([int(j) for j in str(i)]))
 #         list_sort.sort()
@@ -16,14 +16,11 @@
 # # функции, определённой на всей числовой прямой:
 # def f(x):
 #     if x <= -2:
-#         result = 1 - (x + 2)**2
-#         return result
+#         return (1 - (x + 2)**2)
 #     if x > -2 and x <= 2:
-#         result = -(x/2)
-#         return result
+#         return (-(x/2))
 #     if x > 2:
-#         result = (x - 2)**2 + 1
-#         return result
+#         return ((x - 2)**2 + 1)
 #
 # print(f(float(input())))
 
