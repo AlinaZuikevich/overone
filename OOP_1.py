@@ -24,7 +24,6 @@ class Dog:
 
     def change_name(self, new_name):
         self.name = new_name
-        return self.name
 
 
 dog_1 = Dog(30, 6.2, "Archie", 3)
