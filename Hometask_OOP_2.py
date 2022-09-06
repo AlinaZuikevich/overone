@@ -65,31 +65,25 @@
 #         print(f"{self.name} jumping")
 #
 #     def birthday(self):
-#         print(f"{self.name} is {self.age + 1} years old today")
+#         self.age += 1
 #
 #     def sleep(self):
 #         print(f"{self.name} sleeping")
 #
 # class Dog(Pet):
 #
-#     def __init__(self, name, age, master):
-#         super().__init__(name, age, master)
+#     # def __init__(self, name, age, master):
+#     #     super().__init__(name, age, master)
 #
 #     def bark(self):
 #         print(f"Dog {self.name} barks")
 #
 # class Cat(Pet):
 #
-#     def __init__(self, name, age, master):
-#         super().__init__(name, age, master)
-#
 #     def meow(self):
 #         print(f"Cat {self.name} meows")
 #
 # class Parrot(Pet):
-#
-#     def __init__(self, name, age, master):
-#         super().__init__(name, age, master)
 #
 #     def fly(self):
 #         print(f"Parrot {self.name} flies")
@@ -104,14 +98,55 @@
 # dog.run()
 # dog.birthday()
 # dog.bark()
+# print(dog.age)
 #
 # cat.jump()
 # cat.birthday()
 # cat.meow()
+# print(cat.age)
 #
 # parrot.sleep()
 # parrot.birthday()
 # parrot.fly()
+# print(parrot.age)
 
 
-
+# # №14.11
+# # Установите статичеcкий атрибут мин цена в салоне красоты. Допишите методы.Маникюр стоит на 20% больше
+# # Стрижка зависит от длины волос: меньше 30см - +20%, От 30 до 50 см - +50%, Свыше 50 см - +80%
+# class Building:
+#
+#     def __init__(self, doors, windows, floors):
+#         self.doors = doors
+#         self.windows = windows
+#         self.floors = floors
+#
+#     def build(self):
+#         print("The building was built")
+#
+# class BeautySalonMixin:
+#     min_price = 20
+#
+#     def manicure(self):
+#         return self.min_price*1.2
+#
+#     def haircut(self, hair_length):
+#         if hair_length < 30:
+#             return self.min_price*1.2
+#         elif 30 < hair_length < 50:
+#             return self.min_price*1.5
+#         elif hair_length > 50:
+#             return self.min_price * 1.8
+#
+#     def salon_opening_hours(self,open_time, science_time, close_time):
+#         if open_time <= science_time < close_time:
+#             print(f"В {science_time} часов cалон открыт")
+#         else:
+#             print(f"В {science_time} часов cалон закрыт")
+#
+# class SalonWithHouse(Building, BeautySalonMixin):
+#     pass
+#
+# sH = SalonWithHouse(30, 150, 25)
+# print(f'Стоимость стрижки при длине волос 40см - {sH.haircut(40)} рублей')
+# print(f'Стоимость маникюра - {sH.manicure()} рублей')
