@@ -70,9 +70,3 @@
 #
 # for i in figures:
 #     print(i.area())
-
-
-def card_hide(card):
-    return '*' * len(str(card)[:-4]) + str(card)[-4:]
-
-print(card_hide(int(input())))
