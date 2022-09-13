@@ -50,7 +50,7 @@
 #         self.length = length
 #
 #     def area(self):
-#         return f'Площаль прямоугольника = {self.width * self.length}'
+#         return f'Площадь прямоугольника = {self.width * self.length}'
 #
 #
 # class Circle(Figures):
