@@ -6,8 +6,8 @@
 #     return result
 #
 # print(card_hide(int(input())))
-
-
+#
+# 
 # # exam_3_2
 # # Напишите функцию, которая проверяет: является ли слово палиндромом
 # def palindrom(str):
@@ -33,7 +33,6 @@
 #     def area(self):
 #         pass
 #
-#
 # class Square(Figures):
 #
 #     def __init__(self, side_sq):
@@ -41,7 +40,6 @@
 #
 #     def area(self):
 #         return f'Площадь квадрата = {self.side_sq ** 2}'
-#
 #
 # class Rectangle(Figures):
 #
@@ -52,7 +50,6 @@
 #     def area(self):
 #         return f'Площаль прямоугольника = {self.width * self.length}'
 #
-#
 # class Circle(Figures):
 #
 #     def __init__(self, radius):
@@ -61,12 +58,10 @@
 #     def area(self):
 #         return f'Площадь круга равна = {round(math.pi * (self.radius ** 2), 2)}'
 #
-#
 # square = Square(4)
 # rectangle = Rectangle(2, 6)
 # circle = Circle(3)
 #
 # figures = [square, rectangle, circle]
-#
 # for i in figures:
 #     print(i.area())
